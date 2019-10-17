@@ -1,11 +1,11 @@
 # Dyna-Socket
-A Full Fledged Python Chat Engine
+A Full Fledged Python Chat Engine :heart_eyes:
 
 ## Commands Are As Followed:
 
-<send file>     -- This function is used to send read & send text files.\ When asked
+<send file>     -- :arrow_forward: This function is used to send read & send text files.\ When asked
 type the complete path of the file, along with the extension of the file.
-<exit>          -- This function is used to exit the program, whenever required.\
+<exit>          -- :heavy_multiplication_x: This function is used to exit the program, whenever required.\
 <sys shutdown>  -- This function is used to shutdown the system.\
 <terminal>      -- This function is used to launch the terminal (command prompt in windows).\
 <ipconfig>      -- This function is used to see the complete IP Configuration.\
