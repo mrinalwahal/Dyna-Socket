@@ -13,6 +13,14 @@ A Full Fledged Python Chat Engine
 4. threading
 5. glob
 
+* Usually pre-installed (already included in the original installation of Python)
+* You can install it through pip
+```
+pip install os-sys
+pip install sockets
+pip install threaded
+pip install glob2
+```
 
 ### Steps to run
 
