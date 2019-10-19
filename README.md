@@ -1,9 +1,9 @@
 # Dyna-Socket
-A Full Fledged Python Chat Engine
+*** A Full Fledged Python Chat Engine ****
 
 ## Requirements:
 
-1. Python 2.7
+  Python 2.7
 
 ## Python package requirements:
 
@@ -14,7 +14,7 @@ A Full Fledged Python Chat Engine
 5. glob
 
 
-### Steps to run
+### Steps to run the bot
 
 * Run the client side code
 ```console
@@ -26,6 +26,7 @@ code@user:~$ python testserver.py
 ```
 
 ### What to do if your system has python3 as default?
+Create a virtual environment with Python 2.7. Steps mentioned below
 
 #### Create virtualenv:
 * Install virtualenv:
