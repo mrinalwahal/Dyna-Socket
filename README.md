@@ -3,7 +3,7 @@ A Full Fledged Python Chat Engine
 
 ## Requirements:
 
-1. Python 2.7
+1. Python 3.6+
 
 ## Python package requirements:
 
