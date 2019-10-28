@@ -6,13 +6,13 @@ print "-"*60
 print "Welcome To The Falsifier"
 print "-"*60
         
-perm = raw_input("""\nWarning - Any Changes Made To The Files Will Not Be Reverted.
+perm = input("""\nWarning - Any Changes Made To The Files Will Not Be Reverted.
 Also Any Non-Text File Will Be Corrupted.
 Are You Sure You Want To Continue ?(Y/N) - """)
 
 try:
     if perm == "Y" or perm == "y":
-        target = raw_input("\nEnter You Target Folder : ")
+        target = input("\nEnter You Target Folder : ")
         print
         empty = []
         for file in glob.glob(target + "/*"):

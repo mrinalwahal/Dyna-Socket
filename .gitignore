@@ -1,0 +1,13 @@
+#MAC OS
+DS_Store
+
+#VSCODE
+.vscode
+
+#Virtualenvironment
+venv
+
+#Python
+__pycache__/
+*.py[cod]
+*$py.class
